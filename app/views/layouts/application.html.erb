@@ -19,8 +19,10 @@
 <div​ id=​"columns"​​>​
 ​
 <div​ id=​"side"​​>​
+<% if @cart %>
+​​<div​ id=​"cart"​​>​ <%= render @cart %> </div>​
+<% end %>
 
-​<div​ id=​"cart"​​>​ <%= render @cart %> </div>​
 
 ​<ul>​
 ​<li>​​<a​ href=​"http://www...."​​>​Home​</a>​​</li>​
