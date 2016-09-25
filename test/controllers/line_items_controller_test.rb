@@ -24,9 +24,6 @@ class LineItemsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-    assert_redirected_to cart_path(assigns(:line_item).cart)
-  end
-
   test "should show line_item" do
     get :show, id: @line_item
     assert_response :success
@@ -49,4 +46,5 @@ class LineItemsControllerTest < ActionController::TestCase
 
     assert_redirected_to line_items_path
   end
+
 end
